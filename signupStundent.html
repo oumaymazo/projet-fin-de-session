@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student part</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+  </head>
+ 
+  <body>
+    <div class="container">
+      <h1 class="center">
+        Signup only for Student
+      </h1>
+      <form>
+        <div class="form-group">
+          <label for="nameS">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameS"
+            placeholder="your name..."
+          />
+          <p id="fnameSMsg" class="rouge"></p>
+        </div>
+        <div class="form-group">
+          <label for="lastNameS">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastNameS"
+            placeholder="your last name..."
+          />
+          <p id="lnameSMsg" class="rouge"></p>
+
+        </div>
+        <div class="form-group">
+          <label for="emailS">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailS"
+            aria-describedby="emailHelp"
+            placeholder="your email..."
+          />
+          <p id="emailSMsg" class="rouge"></p>
+          <p id="verifEmailSMsg" class="rouge"></p>
+        </div>
+        <div class="form-group">
+          <label for="pwdS">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwdS"
+            placeholder="your password..."
+          />
+          <p id="pwdSMsg" class="rouge"></p>
+        </div>
+        <div class="form-group">
+          <label for="dateS">Birth date</label>
+          <input type="date" class="form-control" id="dateS" />
+          <p id="birthDateMsg" class="rouge"></p>
+        </div>
+        <div class="form-group">
+          <label for="cityS">City</label>
+          <select class="form-control" id="cityS">
+            <option> </option>
+            <option>Ariana </option>
+            <option>Beja</option>
+            <option>Ben Arous</option>
+            <option>Bizerte</option>
+            <option>Gabes</option>
+            <option>Gafsa</option>
+            <option>Jendouba</option>
+            <option>Kairouan</option>
+            <option>kasserine</option>
+            <option>kebili</option>
+            <option>Le kef</option>
+            <option>Mahdia</option>
+            <option>Manouba</option>
+            <option>Mednin</option>
+            <option>Monastir</option>
+            <option>Nabeul</option>
+            <option>Sfax</option>
+            <option>Sidi bouzid</option>
+            <option>Siliana</option>
+            <option>Sousse</option>
+            <option>Tatouine</option>
+            <option>Tozeur</option>
+            <option>Tunis</option>
+            <option>zaghouan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cinS">CIN</label>
+          <input
+            type="number"
+            class="form-control"
+            id="cinS"
+            placeholder="your CIN number..."
+          />
+          <p id="cinSMsg" class="rouge"></p>
+          <p id="verifCinSMsg" class="rouge"></p>
+        </div>
+        <div class="form-group">
+          <label for="classS">Class</label>
+          <select class="form-control" id="classS">
+            <option> </option>
+            <option value="0">First year </option>
+            <option value="1"> Second year</option>
+            <option value="2">Third Year </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="phoneS">phone Number</label>
+          <input
+            type="number"
+            class="form-control"
+            id="phoneS"
+            placeholder="your phone number..."
+          />
+          <p id="phoneSMsg" class="rouge"></p>
+          <p id="verifPhoneSMsg" class="rouge"></p>
+        </div>
+      </form>
+      <div class="center">
+        <button type="button" class="btn btn-warning" onclick="signupStudent()">Sign up</button>
+      </div>
+    </div>
+  </body>
+</html>
